@@ -1,0 +1,20 @@
+{
+  "name": "Fork Around & Find Out",
+  "short_name": "Fork Around ",
+  "start_url": "/works/fork-around-find-out/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/works/fork-around-find-out/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/works/fork-around-find-out/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.danmercede.com/works/fork-around-find-out/" />
+  <title>Fork Around & Find Out: speculative execution for agent safety</title>
+  <meta name="description"
+    content="A fail-closed decision gateway for AI agent tool-calls. Every risky action runs first in a disposable Daytona sandbox, its blast radius is measured, and only an ALLOW verdict is cleared to run for real." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Fork Around & Find Out" />
+  <meta property="og:title" content="Fork Around & Find Out: speculative execution for agent safety" />
+  <meta property="og:description"
+    content="Learned behavioral contracts, three-way drift verdicts, and human-approved evolution for AI agents that never give the same answer twice. UiPath AgentHack 2026 finalist." />
+  <meta property="og:url" content="https://www.danmercede.com/works/fork-around-find-out/" />
+  <meta property="og:image" content="https://www.danmercede.com/works/fork-around-find-out/og-card.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Fork Around & Find Out: speculative execution for agent safety. UiPath AgentHack 2026 finalist." />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@danmercede" />
+  <meta name="twitter:creator" content="@danmercede" />
+  <meta name="twitter:title" content="Fork Around & Find Out: speculative execution for agent safety" />
+  <meta name="twitter:description"
+    content="Learned behavioral contracts, three-way drift verdicts, and human-approved evolution for AI agents. UiPath AgentHack 2026 finalist." />
+  <meta name="twitter:image" content="https://www.danmercede.com/works/fork-around-find-out/og-card.png" />
+  <meta name="twitter:image:alt" content="Fork Around & Find Out: speculative execution for agent safety. UiPath AgentHack 2026 finalist." />
+
+  <!-- Brand favicons (Dan Mercede logo pack, DM mark) -->
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+
+  <!-- Structured data: SoftwareSourceCode + SoftwareApplication for the tool,
+       backlinking author/publisher to the hub Person (danmercede.com/#person).
+       Static so crawlers see it without executing JS. -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://www.danmercede.com/works/fork-around-find-out/#software",
+          "name": "Fork Around & Find Out",
+          "description": "A fail-closed decision gateway for agent tool-calls. Runs a proposed action in a disposable Daytona sandbox, measures the blast radius (files touched, network egress, honeytoken reads), and returns ALLOW, QUARANTINE, or BLOCK. If the run cannot be measured, the action is blocked.",
+          "url": "https://www.danmercede.com/works/fork-around-find-out/",
+          "codeRepository": "https://github.com/OrionArchitekton/fork-around-find-out",
+          "programmingLanguage": "TypeScript",
+          "runtimePlatform": "Node.js 20+",
+          "author": { "@id": "https://www.danmercede.com/#person" },
+          "maintainer": { "@id": "https://www.danmercede.com/#person" }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://www.danmercede.com/works/fork-around-find-out/#application",
+          "name": "Fork Around & Find Out",
+          "applicationCategory": "DeveloperApplication",
+          "operatingSystem": "Linux, macOS, Windows (Node.js 20+)",
+          "description": "A runtime safety gateway that decides per agent action by executing it first in a throwaway world and measuring what it actually did, rather than reading the command and guessing.",
+          "url": "https://www.danmercede.com/works/fork-around-find-out/",
+          "isAccessibleForFree": true,
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "author": { "@id": "https://www.danmercede.com/#person" },
+          "publisher": { "@id": "https://www.danmercede.com/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.danmercede.com/#person",
+          "name": "Dan Mercede",
+          "url": "https://www.danmercede.com"
+        }
+      ]
+    }
+  </script>
+
+  <!-- Fonts: Inter for UI, JetBrains Mono for code/terminal -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+
+  <!-- Tailwind is bundled at build time (compiled stylesheet emitted by Vite);
+       no render-blocking CDN JIT compiler. Base/print styles live in index.css. -->
+</head>
+
+<body class="bg-white text-neutral-900 antialiased">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
