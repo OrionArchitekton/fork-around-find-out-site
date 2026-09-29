@@ -110,7 +110,7 @@ export function renderBakedBody(data: ProductData): string {
 
 export function bodyBake(): Plugin {
   return {
-    name: 'proctor-body-bake',
+    name: 'fork-around-find-out-body-bake',
     // Apply only to the production build; the dev server keeps the empty root.
     apply: 'build',
     transformIndexHtml: {
